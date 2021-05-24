@@ -1,65 +1,158 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset = "utf-8">
-  <meta name="viewport" content="width+device-wideth, initial-scale=1">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Layout</title>
+</head>
 <style>
-  *{
-    box-sizing: border-box;
-  }
+*{
+
+}
+
+.row{
+  width: 100%;
+}
 
 h1{
   text-align: center;
+  background-color: #bfb799;
+
+
+}
+.column-position{
+  text-align: center;
+}
+
+.container{
+ position: relative;
+ top:60px;
+ margin: 15px;
+}
+
+.column{
+  margin: 10px;
+  padding: 25px;
+  padding-left: auto;
+  padding-right: auto;
+  border: 3px solid #a3955d;
+  background-color:#f2e5b1;
 }
 
 p{
-  border: 2px solid #78580a;
-   background-color: #eeeee4;
-   width: 80%;
-   height: 140px;
-   margin-right: auto;
-   margin-left: auto;
-   font-family: Times Roman;
-   font-size:20px;
-   color: #8f6a0d;
-
-@media(min-width:992 px){
-  .col-lg-1, .col-lg-2, .col-lg-3{
-    float:left;
-  }
-  .col-lg-1{
-    width:8.33%
-  }
-  .col-lg-2{
-    width:16.66%;
-  }
-.col-lg-3{
-  width:25%
-}
+  color:#52471e;
+  text-align: left;
 }
 
-@media(min-wideth:768px) and (max-width: 991px){
+
+
+
+
+
+@media (min-width: 992px){
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .col-lg-3 {
+    width: 50%;
+    float: left;
+  }
+  .col-lg-ipad{
+   width: 100%;
+   float: left;
+ }
+}
+
+
+
+@media (max-width: 767px){
   .col-lg-3{
+    width: 100%;
+    float: left;
   }
 }
 
 </style>
-  </head>
-  <h1> Module 2 Assignemnt</h1>
 <body>
-<div class="row"
-<div class="col-lg-3 col-md-6">
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie orci convallis fringilla consequat. Maecenas commodo nulla in molestie luctus.</p>
-  </div>
-  <div class="col-lg-3 col-md-6">
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie orci convallis fringilla consequat. Maecenas commodo nulla in molestie luctus.</p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie orci convallis fringilla consequat. Maecenas commodo nulla in molestie luctus.</p>
+  <div class="container">
+    <div class="row">
+
+    <h1>Module2 Assignment</h1>
+    <br><br>
+      <div class="col-lg-3">
+        <div class="column">
+          <div class="column-position" >
+
+          </div>
+          <p>
+            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm.
+          </p>
+        </div>
       </div>
+      <div class="col-lg-3">
+        <div class="column">
+         <div class="column-position" >
 
+        </div>
+        <p>
+          A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-lg-ipad">
+      <div class="column">
+       <div class="column-position">
 
+      </div>
+      <p>
+        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm.
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
 </body>
-
 </html>
